@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=IBM+Plex+Mono:wght@500;600&display=swap");
+@import "tailwindcss";
+
+/* ===========================================================================
+   TOKENS — palette "dossier juridique ludique" : indigo (autorité) + corail
+   (énergie/CTA) + menthe (validation) + safran (mise en avant), sur un
+   fond papier légèrement teinté lavande. Voir README pour le plan design.
+=========================================================================== */
+:root {
+  --paper: #faf8ff;
+  --paper-raised: #ffffff;
+  --ink: #1b1740;
+  --ink-soft: #4a4470;
+
+  --indigo: #4c3bcf;
+  --indigo-dark: #33257a;
+  --indigo-tint: #eae6ff;
+
+  --coral: #ff6b57;
+  --coral-dark: #d94a37;
+  --coral-tint: #ffe6e0;
+
+  --mint: #12a37e;
+  --mint-dark: #0b7a5f;
+  --mint-tint: #dcf6ee;
+
+  --saffron: #ffb627;
+  --saffron-dark: #c9860a;
+  --saffron-tint: #fff2d9;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+
+  --color-indigo: var(--indigo);
+  --color-indigo-dark: var(--indigo-dark);
+  --color-indigo-tint: var(--indigo-tint);
+
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --color-coral-tint: var(--coral-tint);
+
+  --color-mint: var(--mint);
+  --color-mint-dark: var(--mint-dark);
+  --color-mint-tint: var(--mint-tint);
+
+  --color-saffron: var(--saffron);
+  --color-saffron-dark: var(--saffron-dark);
+  --color-saffron-tint: var(--saffron-tint);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(76, 59, 207, 0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: var(--saffron-tint);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.stamp {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 3px solid currentColor;
+  border-radius: 9999px;
+  transform: rotate(-6deg);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.25em 0.9em;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
