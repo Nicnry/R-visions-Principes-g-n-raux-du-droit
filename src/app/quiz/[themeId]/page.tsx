@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useRef } from "react";
+import { use, useEffect, useMemo, useRef } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { RotateCcw, Trophy } from "lucide-react";
@@ -17,7 +17,10 @@ import { useProgress } from "@/controllers/progressController";
 export default function ThemeQuizPage({ params }: { params: Promise<{ themeId: string }> }) {
   const { themeId } = use(params);
   const theme = getTheme(themeId);
-  const questions = getQuizByTheme(themeId);
+  // getQuizByTheme renvoie un nouveau tableau à chaque appel : on le
+  // mémorise pour garder une référence stable entre les rendus, sinon
+  // l'effet de mélange dans useQuizSession se redéclencherait en boucle.
+  const questions = useMemo(() => getQuizByTheme(themeId), [themeId]);
   const { recordQuizScore } = useProgress();
 
   const session = useQuizSession(questions);
@@ -38,6 +41,15 @@ export default function ThemeQuizPage({ params }: { params: Promise<{ themeId: s
       <main>
         <PageHeader eyebrow={theme.emoji + "  Quiz"} title={theme.title} back="/quiz" />
         <p className="px-5 text-sm text-ink-soft">Pas encore de questions pour ce thème.</p>
+      </main>
+    );
+  }
+  // Le mélange des questions est calculé côté client (après hydratation) ;
+  // tant qu'il n'est pas prêt, on affiche un état de chargement minimal.
+  if (session.total === 0) {
+    return (
+      <main>
+        <PageHeader eyebrow={theme.emoji + "  Quiz"} title={theme.title} back="/quiz" />
       </main>
     );
   }
@@ -104,7 +116,7 @@ export default function ThemeQuizPage({ params }: { params: Promise<{ themeId: s
             <span className="font-mono text-[11px] font-semibold uppercase tracking-widest text-indigo">
               Question
             </span>
-            <EstimatedBadge compact />
+            {q.estimated && <EstimatedBadge compact />}
           </div>
           <p className="font-display text-lg font-semibold leading-snug text-ink">{q.question}</p>
 

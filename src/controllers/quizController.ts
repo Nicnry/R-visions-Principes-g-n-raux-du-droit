@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { QuizQuestion } from "@/models/types";
 
 export interface ShuffledQuestion {
@@ -11,6 +11,8 @@ export interface ShuffledQuestion {
   choices: string[];
   /** index de la bonne réponse DANS le tableau mélangé */
   correctIndex: number;
+  /** true = question déduite, pas encore confirmée par le cours réel */
+  estimated: boolean;
 }
 
 /** Fisher-Yates shuffle — ne mute pas le tableau d'origine. */
@@ -37,6 +39,7 @@ function shuffleQuestion(q: QuizQuestion): ShuffledQuestion {
     explanation: q.explanation,
     choices: order.map((i) => q.choices[i]),
     correctIndex: order.indexOf(q.correctIndex),
+    estimated: q.estimated,
   };
 }
 
@@ -52,9 +55,14 @@ interface UseQuizSessionOptions {
 export function useQuizSession(questions: QuizQuestion[], options: UseQuizSessionOptions = {}) {
   const [sessionKey, setSessionKey] = useState(0); // incrémenté pour forcer un nouveau mélange
 
-  const sessionQuestions = useMemo(() => {
+  // Le mélange utilise Math.random() : il ne doit tourner que côté client,
+  // sinon le rendu serveur (SSR) et le premier rendu client produisent un
+  // ordre différent, ce qui provoque une erreur d'hydratation React.
+  const [sessionQuestions, setSessionQuestions] = useState<ShuffledQuestion[]>([]);
+
+  useEffect(() => {
     const pool = options.limit ? shuffle(questions).slice(0, options.limit) : shuffle(questions);
-    return pool.map(shuffleQuestion);
+    setSessionQuestions(pool.map(shuffleQuestion));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [questions, sessionKey]);
 
