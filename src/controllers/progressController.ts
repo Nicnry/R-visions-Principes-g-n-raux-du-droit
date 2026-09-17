@@ -31,9 +31,17 @@ export function useProgress() {
     setHydrated(true);
   }, []);
 
-  const persist = useCallback((next: ProgressState) => {
-    setProgress(next);
-    writeStorage(next);
+  // Toutes les mises à jour passent par `setProgress` en forme fonctionnelle
+  // (prev => next), ce qui rend ces callbacks stables (ils ne dépendent pas
+  // de `progress`). Sans ça, leur identité change à chaque rendu, ce qui
+  // provoque une boucle infinie dans les effets qui les appellent (ex.
+  // `markThemeRead` dans la page théorie).
+  const update = useCallback((updater: (prev: ProgressState) => ProgressState) => {
+    setProgress((prev) => {
+      const next = updater(prev);
+      writeStorage(next);
+      return next;
+    });
   }, []);
 
   const getThemeProgress = useCallback(
@@ -43,42 +51,49 @@ export function useProgress() {
 
   const markThemeRead = useCallback(
     (themeId: string) => {
-      const current = progress[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
-      persist({ ...progress, [themeId]: { ...current, themeRead: true } });
+      update((prev) => {
+        const current = prev[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
+        if (current.themeRead) return prev;
+        return { ...prev, [themeId]: { ...current, themeRead: true } };
+      });
     },
-    [progress, persist]
+    [update]
   );
 
   const markPracticeDone = useCallback(
     (themeId: string, caseId: string) => {
-      const current = progress[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
-      if (current.practiceDone.includes(caseId)) return;
-      persist({
-        ...progress,
-        [themeId]: { ...current, practiceDone: [...current.practiceDone, caseId] },
+      update((prev) => {
+        const current = prev[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
+        if (current.practiceDone.includes(caseId)) return prev;
+        return {
+          ...prev,
+          [themeId]: { ...current, practiceDone: [...current.practiceDone, caseId] },
+        };
       });
     },
-    [progress, persist]
+    [update]
   );
 
   const recordQuizScore = useCallback(
     (themeId: string, scorePercent: number) => {
-      const current = progress[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
-      persist({
-        ...progress,
-        [themeId]: {
-          ...current,
-          bestScore: Math.max(current.bestScore, scorePercent),
-          attempts: current.attempts + 1,
-        },
+      update((prev) => {
+        const current = prev[themeId] ?? { ...emptyThemeProgress, practiceDone: [] };
+        return {
+          ...prev,
+          [themeId]: {
+            ...current,
+            bestScore: Math.max(current.bestScore, scorePercent),
+            attempts: current.attempts + 1,
+          },
+        };
       });
     },
-    [progress, persist]
+    [update]
   );
 
   const resetProgress = useCallback(() => {
-    persist(emptyState());
-  }, [persist]);
+    update(() => emptyState());
+  }, [update]);
 
   const globalStats = {
     themesRead: themes.filter((t) => getThemeProgress(t.id).themeRead).length,
