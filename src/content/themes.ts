@@ -1,33 +1,26 @@
 import { Theme } from "@/models/types";
 
-// ⚠️ CONTENU DÉDUIT — voir CLAUDE.md. Ces 7 thèmes sont une estimation
-// basée sur l'intitulé officiel de l'unité 61-31.3 "Principes généraux du
-// droit" (mots-clés : bases du droit, droits fondamentaux, droit de la
-// personnalité, droit des contrats, droit du travail). À confronter au
-// vrai plan de cours dès qu'il est connu.
+// Thèmes basés sur le plan d'études officiel de l'unité 61-31.3
+// "Principes généraux du droit" (matières étudiées, cf. Présentation du
+// cours IG 26/27) et sur les supports de cours réels donnés en classe.
+// Le Chapitre 1 (bases-du-droit) a été donné et confirmé : estimated: false.
+// Les autres thèmes annoncés au plan du cours n'ont pas encore été donnés
+// en détail : ils restent estimated: true jusqu'à réception du support de
+// cours correspondant (voir CLAUDE.md).
 
 export const themes: Theme[] = [
   {
-    id: "sources-du-droit",
+    id: "bases-du-droit",
     order: 1,
-    title: "Sources du droit",
+    title: "Les bases du droit",
     emoji: "📜",
     color: "indigo",
-    summary: "Constitution, lois, ordonnances, jurisprudence : la hiérarchie des normes.",
-    estimated: true,
-  },
-  {
-    id: "etat-federalisme",
-    order: 2,
-    title: "État, fédéralisme & séparation des pouvoirs",
-    emoji: "🏛️",
-    color: "coral",
-    summary: "Qui fait la loi, qui l'applique, qui juge — et à quel échelon.",
-    estimated: true,
+    summary: "Définitions, sources du droit, organisation de la justice et application du droit.",
+    estimated: false,
   },
   {
     id: "droits-fondamentaux",
-    order: 3,
+    order: 2,
     title: "Droits fondamentaux",
     emoji: "⚖️",
     color: "mint",
@@ -36,7 +29,7 @@ export const themes: Theme[] = [
   },
   {
     id: "protection-personnalite",
-    order: 4,
+    order: 3,
     title: "Protection de la personnalité",
     emoji: "🛡️",
     color: "saffron",
@@ -45,29 +38,20 @@ export const themes: Theme[] = [
   },
   {
     id: "droit-contrats",
-    order: 5,
+    order: 4,
     title: "Droit des contrats",
     emoji: "🤝",
     color: "indigo",
-    summary: "Code des obligations : formation, validité, types de contrats.",
+    summary: "Code des obligations : formation, validité, lien avec le domaine informatique.",
     estimated: true,
   },
   {
     id: "contrat-travail",
-    order: 6,
+    order: 5,
     title: "Contrat de travail",
     emoji: "💼",
     color: "coral",
     summary: "Éléments essentiels, droits et obligations de l'employeur et de l'employé·e.",
-    estimated: true,
-  },
-  {
-    id: "contrats-informatique",
-    order: 7,
-    title: "Contrats informatiques",
-    emoji: "💻",
-    color: "mint",
-    summary: "Licences logicielles, prestations IT, contrats SaaS.",
     estimated: true,
   },
 ];

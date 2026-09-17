@@ -1,67 +1,98 @@
 import { TheoryBlock } from "@/models/types";
 
-// ⚠️ CONTENU DÉDUIT (estimated: true) — voir CLAUDE.md avant de modifier.
+// ⚠️ Le bloc "bases-du-droit" (estimated: false) vient du support de cours
+// réel (Chapitre 1 - Les bases du droit, PGD IG 25/26). Les autres blocs
+// restent déduits du plan d'études (estimated: true) — voir CLAUDE.md
+// avant de modifier.
 
 export const theory: TheoryBlock[] = [
   {
-    themeId: "sources-du-droit",
-    estimated: true,
+    themeId: "bases-du-droit",
+    estimated: false,
     intro:
-      "En Suisse, toutes les règles de droit ne se valent pas : elles s'organisent selon une hiérarchie des normes. Comprendre cet ordre permet de savoir quelle règle l'emporte en cas de conflit.",
+      "Le droit est omniprésent dans la vie quotidienne. Ce chapitre pose les notions de base : qu'est-ce que le droit, comment se distingue-t-il selon ses domaines, d'où vient-il (ses sources), qui l'applique (l'organisation de la justice) et comment l'applique-t-on concrètement.",
     sections: [
       {
-        heading: "La hiérarchie des normes",
+        heading: "Définition du droit : objectif et subjectif",
         content:
-          "Du sommet à la base : 1) le droit international (traités ratifiés par la Suisse), 2) la Constitution fédérale (Cst.), 3) les lois fédérales, 4) les ordonnances (fédérales, puis cantonales), 5) le droit cantonal et communal. Une norme inférieure ne peut pas contredire une norme supérieure.",
+          "Le droit objectif est l'ensemble de règles générales et abstraites qui indiquent ce qui doit être fait dans un cas donné, édictées ou reconnues par une autorité compétente, dans le but de régir les relations sociales, et dont le respect est assuré par des moyens de contrainte (sanction de la force publique). Le droit subjectif (« mon droit », « mes droits ») est une prérogative accordée à une personne physique ou morale de faire, d'exiger, ou d'être obligée à faire quelque chose ; il se décline en 4 catégories : les droits (exercés dans l'intérêt propre du titulaire), les pouvoirs (exercés dans l'intérêt d'autrui, ex. l'autorité parentale), les libertés (droits vis-à-vis de la puissance publique, ex. droits fondamentaux) et les obligations (ex. livrer la marchandise vendue).",
       },
       {
-        heading: "Loi vs ordonnance",
+        heading: "Droit de fond et droit de procédure",
         content:
-          "Une loi est adoptée par le Parlement (Assemblée fédérale) et peut être soumise au référendum. Une ordonnance est adoptée par le Conseil fédéral (ou une administration) pour préciser l'application d'une loi ; elle ne peut pas créer de nouvelles obligations qui ne découlent pas de la loi.",
+          "Le droit de fond (ou droit matériel) définit les droits et obligations des sujets visés par un acte juridique — c'est le contenu. Le droit de procédure (ou droit formel) règle la mise en œuvre des droits subjectifs : il régit le déroulement et les formes des procès et organise les voies de recours.",
       },
       {
-        heading: "La jurisprudence et la doctrine",
+        heading: "Droit positif : impératif vs dispositif",
         content:
-          "La jurisprudence, ce sont les décisions des tribunaux (notamment du Tribunal fédéral) qui interprètent la loi. La doctrine, ce sont les écrits des juristes (commentaires, articles scientifiques). Ni l'une ni l'autre ne sont formellement des « sources » contraignantes comme la loi, mais elles orientent fortement son application.",
+          "Une règle de droit impérative doit être respectée par tout le monde, sans possibilité d'y déroger par accord entre les parties (ex. art. 361 CO). Une règle dispositive peut au contraire être écartée ou modifiée par un accord entre les parties ; elle ne s'applique qu'à défaut d'un tel accord (ex. art. 364 al. 3 CO).",
       },
       {
-        heading: "Le droit privé et le droit public",
+        heading: "Droit national et droit international",
         content:
-          "Le droit privé règle les rapports entre particuliers sur un pied d'égalité (ex. Code civil, Code des obligations). Le droit public règle les rapports où l'État exerce une forme d'autorité (ex. droit constitutionnel, droit administratif, droit pénal).",
+          "Le droit national (ou droit interne) s'applique à une population donnée, sur un territoire donné, à un moment donné ; il se décline sur trois niveaux (fédéral, cantonal, communal). Le droit international (ou droit externe) s'applique à plusieurs États ou entre eux. Dans les deux cas, on distingue encore droit public et droit privé. En Suisse, le droit international est supérieur au droit national : chaque norme doit être conforme à une norme supérieure.",
+      },
+      {
+        heading: "Droit privé et droit public",
+        content:
+          "Le droit privé régit les rapports entre particuliers (personnes physiques ou morales) sur un pied d'égalité (rapports horizontaux) ; il vise à sauvegarder les intérêts individuels. Ex. : droit civil, droit des obligations. Le droit public organise l'État, règle son fonctionnement et ses relations avec les particuliers (rapports verticaux, où les parties ne sont pas sur un pied d'égalité) ; il vise à protéger l'intérêt général, et ses règles sont souvent impératives, assorties de sanctions strictes. Ex. : droit constitutionnel, droit pénal, droit administratif. Les grandes divisions du droit public sont : droit administratif, droit constitutionnel, droit pénal et droit de procédure (CPC, CPP, PA). Les grandes divisions du droit privé sont : droit civil (droit des personnes, droit de la famille, droit réel, droit des successions), droit des obligations, droit commercial et droit de la propriété intellectuelle.",
+      },
+      {
+        heading: "Les quatre sources du droit",
+        content:
+          "Le droit se manifeste par des normes (générales et abstraites, de manière générale) et par des décisions ou jugements relatifs à un cas particulier (de manière concrète). Ses quatre sources, mentionnées à l'art. 1 CC, sont : la législation (la loi), la coutume, la jurisprudence et la doctrine. La loi est la source primaire ; la coutume, la jurisprudence et la doctrine sont des sources secondaires, auxquelles le juge recourt lorsque la loi ne suffit pas.",
+        articleRef: "Art. 1 CC",
+      },
+      {
+        heading: "La législation (droit écrit) et sa hiérarchie",
+        content:
+          "La législation englobe toutes les règles juridiques contenues dans les textes édictés ou approuvés par une autorité investie du pouvoir législatif ou réglementaire. Au sens strict, la « loi » désigne les règles adoptées par le Parlement selon la procédure législative. Hiérarchie des normes (du sommet à la base) : droit international, Constitution fédérale, loi, ordonnances, autres actes. On distingue législation fédérale (Cst. fédérale, loi fédérale, code, arrêté fédéral, ordonnance législative), cantonale (Cst. cantonale, loi cantonale, loi intercantonale) et communale (règlement communal, intercommunal). Le Recueil officiel (RO) rassemble les textes normatifs par ordre chronologique et fait foi ; le Recueil systématique (RS) les classe par domaine et intègre les modifications à jour (chaque canton a aussi son RO et son RS, ex. RSJU, RSN).",
+      },
+      {
+        heading: "La coutume",
+        content:
+          "La coutume est l'ensemble des règles non écrites qui résultent d'un usage implanté dans une collectivité et tenu par elle comme juridiquement obligatoire. Trois conditions : être généralement du droit non écrit, être née d'un usage d'une certaine durée qui persiste dans le temps, et être reconnue par la collectivité comme juridiquement contraignante.",
+      },
+      {
+        heading: "La jurisprudence",
+        content:
+          "La jurisprudence est l'ensemble des jugements des tribunaux et des décisions rendues par d'autres autorités investies du pouvoir judiciaire dans un cas d'espèce. En Suisse, il appartient au Tribunal fédéral (TF) de veiller à une application uniforme du droit fédéral. Le juge tranche les litiges en appliquant la loi à des cas concrets, ce qui implique souvent de l'interpréter pour garantir l'égalité devant la loi. Une fois entré en force, un jugement ne peut plus être annulé, sauf circonstances exceptionnelles. Au niveau fédéral, les arrêts du TF sont publiés sur www.bger.ch (ex. ATF 119 IV 59) ; au niveau cantonal, chaque canton publie ses propres décisions.",
+      },
+      {
+        heading: "La doctrine",
+        content:
+          "La doctrine est l'ensemble des textes publiés par des auteurs sur des sujets de caractère juridique (ouvrages, revues, bases de données en ligne). Elle facilite la compréhension et la résolution des problèmes juridiques et constitue un outil essentiel utilisé par les tribunaux pour appliquer et faire évoluer le droit.",
+      },
+      {
+        heading: "Organisation de la justice et séparation des pouvoirs",
+        content:
+          "Toute règle de droit est en principe assortie d'une sanction ; pour l'appliquer et la contrôler, il faut des institutions (tribunaux) et des règles de procédure. L'organisation des tribunaux relève de la compétence des cantons (art. 122-123 Cst.), mais il existe une organisation judiciaire fédérale (TF, Tribunal administratif fédéral à St-Gall, Tribunal pénal fédéral à Bellinzone, Tribunal fédéral des brevets à St-Gall) et une organisation internationale (Cour européenne des droits de l'Homme, CEDH), soit trois échelons : cantonal, fédéral, international. Au niveau cantonal, chaque canton a ses propres tribunaux de première instance (ex. tribunaux régionaux) puis une autorité de recours (tribunal cantonal, 2e instance).",
+      },
+      {
+        heading: "Compétence territoriale et matérielle",
+        content:
+          "Les règles de procédure sont les formalités prévues par la loi pour agir en justice (qualité pour agir, délais, compétence, forme, récusation, etc.). La compétence territoriale concerne le lieu du procès : le principe veut que la loi prévoie les règles de compétence, avec pour exception l'élection de for. La compétence matérielle concerne le sujet du procès : tribunaux civils pour les litiges entre particuliers, tribunaux administratifs pour les litiges de droit public, tribunaux pénaux pour les litiges pénaux.",
+      },
+      {
+        heading: "Garanties fondamentales de procédure",
+        content:
+          "Ces garanties trouvent leur fondement à l'art. 6 CEDH et aux art. 29, 30 et 32 Cst. féd. Elles incluent notamment le droit à un procès équitable (art. 29 al. 1 Cst.), l'interdiction du déni de justice formel (art. 29 al. 1 Cst.), le droit à l'assistance judiciaire gratuite et à l'assistance gratuite d'un défenseur (art. 29 al. 3 Cst.), et le droit d'être entendu (art. 29 al. 2 Cst.).",
+        articleRef: "Art. 29, 30, 32 Cst.",
+      },
+      {
+        heading: "Application du droit : la primauté de la loi",
+        content:
+          "L'art. 1 CC pose le principe de la primauté du droit écrit : la loi régit toutes les matières auxquelles se rapportent la lettre ou l'esprit de l'une de ses dispositions ; à défaut d'une disposition légale applicable, le juge prononce selon le droit coutumier et, à défaut d'une coutume, selon les règles qu'il établirait s'il avait à faire acte de législateur ; il s'inspire des solutions consacrées par la doctrine et la jurisprudence. Difficulté : le texte de la loi est général alors que les situations sont particulières, et les dispositions légales ne sont pas toujours claires (notions non définies comme « justes motifs », notions évolutives comme la bonne foi, formulations incomplètes, lacunes ou contradictions).",
+        articleRef: "Art. 1 CC",
       },
     ],
     keyPoints: [
-      "Une ordonnance ne peut jamais contredire une loi, et une loi ne peut jamais contredire la Constitution.",
-      "Le Code civil (CC) et le Code des obligations (CO) sont les piliers du droit privé suisse.",
-      "La jurisprudence du Tribunal fédéral n'est pas une « loi », mais elle guide l'interprétation du droit.",
-    ],
-  },
-  {
-    themeId: "etat-federalisme",
-    estimated: true,
-    intro:
-      "La Suisse est un État fédéral : les compétences sont partagées entre la Confédération, les 26 cantons et les communes. Cette organisation repose aussi sur la séparation des pouvoirs.",
-    sections: [
-      {
-        heading: "Le fédéralisme",
-        content:
-          "La Confédération n'a que les compétences que la Constitution lui attribue explicitement (principe d'attribution) ; tout le reste relève des cantons (principe de subsidiarité). C'est pourquoi certaines matières varient d'un canton à l'autre (ex. fiscalité, école).",
-      },
-      {
-        heading: "La séparation des pouvoirs",
-        content:
-          "Pouvoir législatif (fait la loi) : l'Assemblée fédérale (Conseil national + Conseil des États). Pouvoir exécutif (applique la loi) : le Conseil fédéral et l'administration. Pouvoir judiciaire (tranche les litiges) : les tribunaux, dont le Tribunal fédéral. Cette séparation évite la concentration du pouvoir.",
-      },
-      {
-        heading: "Les instruments de démocratie directe",
-        content:
-          "Le référendum (obligatoire ou facultatif) permet au peuple de se prononcer sur une loi ou une modification constitutionnelle déjà votée par le Parlement. L'initiative populaire permet au peuple de proposer lui-même une modification de la Constitution.",
-      },
-    ],
-    keyPoints: [
-      "La Confédération agit seulement là où la Constitution le prévoit ; le reste appartient aux cantons.",
-      "Trois pouvoirs distincts : législatif, exécutif, judiciaire.",
-      "Référendum = réagir à une décision du Parlement ; initiative = proposer un nouveau texte constitutionnel.",
+      "Droit objectif = les règles ; droit subjectif = mes droits (droits, pouvoirs, libertés, obligations).",
+      "Les 4 sources du droit (art. 1 CC) : la loi (source primaire), puis la coutume, la jurisprudence et la doctrine (sources secondaires).",
+      "Droit privé = rapports horizontaux entre particuliers ; droit public = rapports verticaux avec l'État, règles souvent impératives.",
+      "Hiérarchie des normes : droit international > Constitution fédérale > loi > ordonnances > autres actes.",
+      "Organisation judiciaire à 3 échelons : cantonal (1ère et 2e instance) → fédéral (TF et tribunaux spéciaux) → international (CEDH).",
+      "Le Tribunal fédéral garantit une application uniforme du droit fédéral ; il ne légifère pas.",
     ],
   },
   {
@@ -186,35 +217,6 @@ export const theory: TheoryBlock[] = [
       "Le lien de subordination est le critère clé qui distingue le contrat de travail du mandat.",
       "L'employeur doit protéger la personnalité et la santé du travailleur (art. 328 CO).",
       "Un congé peut être valable mais abusif si les motifs invoqués sont contraires à la bonne foi.",
-    ],
-  },
-  {
-    themeId: "contrats-informatique",
-    estimated: true,
-    intro:
-      "Le domaine informatique combine plusieurs types de contrats du CO : vente, mandat, entreprise (louage d'ouvrage) et licences, souvent adaptés aux réalités du logiciel et du cloud.",
-    sections: [
-      {
-        heading: "Licence logicielle",
-        content:
-          "La licence donne le droit d'utiliser un logiciel selon des conditions définies (durée, nombre d'utilisateurs, usage commercial ou non), sans transférer la propriété du code. Le droit d'auteur (LDA) protège le logiciel en tant qu'œuvre.",
-      },
-      {
-        heading: "Contrat de prestations IT (développement)",
-        content:
-          "Selon ce qui est promis, un contrat de développement peut s'analyser comme un contrat d'entreprise (obligation de résultat : livrer un logiciel qui fonctionne, art. 363 ss CO) ou comme un mandat (obligation de moyens : agir avec diligence, art. 394 ss CO).",
-        articleRef: "Art. 363 CO",
-      },
-      {
-        heading: "Contrats SaaS / cloud",
-        content:
-          "Un contrat SaaS combine souvent bail (mise à disposition de l'usage d'un logiciel), mandat (hébergement, maintenance) et parfois licence. Les clauses de niveau de service (SLA), de disponibilité et de localisation/traitement des données y sont centrales, en lien avec la LPD.",
-      },
-    ],
-    keyPoints: [
-      "Une licence donne un droit d'usage, pas la propriété du logiciel.",
-      "Contrat d'entreprise = obligation de résultat ; mandat = obligation de moyens.",
-      "Un contrat SaaS mélange souvent plusieurs qualifications juridiques (bail, mandat, licence).",
     ],
   },
 ];

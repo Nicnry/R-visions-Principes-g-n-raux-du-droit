@@ -1,57 +1,60 @@
 import { PracticeCase } from "@/models/types";
 
-// ⚠️ CONTENU DÉDUIT (estimated: true) — voir CLAUDE.md avant de modifier.
+// ⚠️ Les cas "bases-du-droit" (estimated: false) sont adaptés d'exercices
+// et de questions réellement posés en cours (Chapitre 1). Les autres cas
+// restent déduits du plan d'études (estimated: true) — voir CLAUDE.md
+// avant de modifier.
 
 export const practiceCases: PracticeCase[] = [
   {
-    id: "pc-sources-1",
-    themeId: "sources-du-droit",
-    type: "reflexion",
-    title: "Une ordonnance peut-elle tout décider ?",
-    scenario:
-      "Le Conseil fédéral édicte une ordonnance qui impose une nouvelle obligation aux entreprises, sans qu'aucune loi fédérale ne le prévoie.",
-    question:
-      "Cette ordonnance est-elle valable ? Justifie ta réponse à l'aide du principe de hiérarchie des normes.",
-    correction:
-      "Non, en principe : une ordonnance ne peut que préciser ou concrétiser une loi existante, elle ne peut pas créer une obligation nouvelle qui ne repose sur aucune base légale (loi ou Constitution). Sans base légale suffisante, elle est contraire au principe de la hiérarchie des normes et peut être annulée par le juge.",
-    estimated: true,
-  },
-  {
-    id: "pc-sources-2",
-    themeId: "sources-du-droit",
+    id: "pc-bases-1",
+    themeId: "bases-du-droit",
     type: "examen",
-    title: "Identifier le type de norme",
+    title: "Droit privé ou droit public ?",
     scenario:
-      "On te donne trois textes : (1) la Loi fédérale sur la protection des données, (2) l'Ordonnance sur la protection des données, (3) un arrêt du Tribunal fédéral sur l'interprétation de cette loi.",
-    question: "Classe ces trois textes selon leur rang dans la hiérarchie des normes et explique le rôle de chacun.",
-    correction:
-      "Rang le plus élevé : la loi fédérale (adoptée par le Parlement, éventuellement soumise au référendum). Ensuite l'ordonnance (adoptée par le Conseil fédéral, doit rester dans le cadre fixé par la loi). L'arrêt du Tribunal fédéral n'est pas à proprement parler une « norme » au même rang : c'est de la jurisprudence, qui interprète la loi mais ne peut pas la contredire ni créer une nouvelle règle générale et abstraite.",
-    estimated: true,
-  },
-  {
-    id: "pc-etat-1",
-    themeId: "etat-federalisme",
-    type: "reflexion",
-    title: "Qui décide de quoi ?",
-    scenario:
-      "Un canton adopte une loi qui organise l'école obligatoire sur son territoire. En parallèle, la Confédération négocie et signe un traité international.",
+      "Maxime est arrêté par la police pour conduite en état d'ébriété. Mélanie hérite de la maison de ses parents décédés. Un enseignant renvoie un élève qui adopte un comportement inadéquat en classe. Plusieurs pays ratifient un traité international.",
     question:
-      "Ces deux compétences relèvent-elles du même niveau de l'État ? Explique en te basant sur le principe d'attribution des compétences.",
+      "Pour chacune de ces quatre situations, indique si elle relève du droit privé ou du droit public, et justifie en fonction du critère du rapport horizontal (égalité entre particuliers) ou vertical (autorité de l'État).",
     correction:
-      "Non. L'instruction publique est une compétence essentiellement cantonale (les cantons gardent toute compétence non attribuée à la Confédération). La conclusion de traités internationaux, elle, est une compétence fédérale (art. 54 Cst.) : seule la Confédération représente la Suisse à l'extérieur.",
-    estimated: true,
+      "Maxime (conduite en état d'ébriété) : droit public — c'est l'État, via la police et le droit pénal, qui sanctionne, dans un rapport vertical. Mélanie (héritage) : droit privé — succession entre particuliers, rapport horizontal (droit civil). L'enseignant qui renvoie un élève : droit public — l'école est une institution étatique qui exerce une autorité sur l'élève. Le traité international entre États : droit public — il règle les relations entre États, pas entre particuliers.",
+    estimated: false,
   },
   {
-    id: "pc-etat-2",
-    themeId: "etat-federalisme",
+    id: "pc-bases-2",
+    themeId: "bases-du-droit",
     type: "examen",
-    title: "Référendum ou initiative ?",
+    title: "Assurance de base vs assurance complémentaire",
     scenario:
-      "Un groupe de citoyens souhaite s'opposer à une loi fédérale qui vient d'être adoptée par le Parlement. Un autre groupe souhaite au contraire faire inscrire un nouveau principe dans la Constitution, alors qu'aucun projet n'existe encore au Parlement.",
-    question: "Quel instrument de démocratie directe chaque groupe doit-il utiliser, et pourquoi ?",
+      "Pascal doit payer tous les mois sa prime d'assurance-maladie de base (LAMal). Georges doit payer tous les mois son assurance maladie complémentaire.",
+    question: "Ces deux obligations relèvent-elles du même domaine du droit ? Explique la différence.",
     correction:
-      "Le premier groupe doit lancer un référendum facultatif (100 000 signatures dans les 100 jours) pour soumettre la loi déjà votée au vote populaire. Le second groupe doit lancer une initiative populaire (100 000 signatures, délai de 18 mois) pour proposer lui-même un nouveau texte constitutionnel, indépendamment de toute décision préalable du Parlement.",
-    estimated: true,
+      "Non. L'assurance-maladie de base (LAMal) est obligatoire et fortement réglementée par l'État dans un but d'intérêt général (accès aux soins pour tous) : elle relève du droit public. L'assurance complémentaire, elle, est souscrite librement auprès d'un assureur privé, sur la base d'un contrat entre particuliers (personne physique et compagnie d'assurance) : elle relève du droit privé.",
+    estimated: false,
+  },
+  {
+    id: "pc-bases-3",
+    themeId: "bases-du-droit",
+    type: "reflexion",
+    title: "Quel tribunal est compétent ?",
+    scenario:
+      "Trois affaires doivent être jugées en première instance : (1) une infraction visant les intérêts de la Confédération, comme un acte terroriste ; (2) un délit routier mineur ; (3) un litige civil de faible valeur avec un voisin.",
+    question: "Identifie le tribunal compétent en première instance pour chacune de ces trois affaires.",
+    correction:
+      "(1) Le Tribunal pénal fédéral (TPF, siège à Bellinzone) juge en 1ère instance les infractions visant les intérêts de la Confédération. (2) Le tribunal de police (tribunal cantonal de première instance) est compétent pour un délit routier mineur. (3) Le tribunal régional (tribunal civil de première instance) est compétent pour un litige civil de faible valeur, comme un litige de voisinage.",
+    estimated: false,
+  },
+  {
+    id: "pc-bases-4",
+    themeId: "bases-du-droit",
+    type: "reflexion",
+    title: "Les 4 sources du droit face à une lacune",
+    scenario:
+      "Un juge doit trancher un litige pour lequel aucune loi ne prévoit de solution claire.",
+    question:
+      "Selon l'art. 1 CC, dans quel ordre le juge doit-il chercher une solution ? Cite les quatre sources du droit et précise lesquelles sont primaires ou secondaires.",
+    correction:
+      "Le juge applique d'abord la loi (source primaire). À défaut de disposition légale applicable, il se fonde sur le droit coutumier (la coutume) et, à défaut de coutume, sur les règles qu'il établirait lui-même s'il devait faire acte de législateur — en s'inspirant alors des solutions consacrées par la doctrine et la jurisprudence. La loi est donc la source primaire ; la coutume, la jurisprudence et la doctrine sont des sources secondaires auxquelles on recourt en cas de lacune.",
+    estimated: false,
   },
   {
     id: "pc-df-1",
@@ -150,32 +153,6 @@ export const practiceCases: PracticeCase[] = [
     question: "Ce licenciement peut-il être qualifié d'abusif au sens de l'art. 336 CO ? Justifie.",
     correction:
       "Un congé donné en raison de l'exercice de bonne foi d'un droit ou d'une prétention légitime par le travailleur (ici, un signalement fait de bonne foi) peut être qualifié d'abusif au sens de l'art. 336 CO, même si l'employeur reste libre de résilier le contrat (liberté de résiliation). Un congé abusif reste valable (le contrat prend fin), mais ouvre le droit à une indemnité pouvant aller jusqu'à 6 mois de salaire (art. 336a CO).",
-    estimated: true,
-  },
-  {
-    id: "pc-it-1",
-    themeId: "contrats-informatique",
-    type: "reflexion",
-    title: "Obligation de résultat ou de moyens ?",
-    scenario:
-      "Une agence est mandatée pour développer une application mobile « clé en main » livrée à une date précise, contre un prix forfaitaire.",
-    question:
-      "S'agit-il plutôt d'un contrat d'entreprise ou d'un mandat ? Quelle conséquence si l'application ne fonctionne pas correctement à la livraison ?",
-    correction:
-      "Un développement « clé en main », à prix forfaitaire et avec un résultat attendu précis, s'analyse en principe comme un contrat d'entreprise (art. 363 ss CO) : obligation de résultat. Si l'application ne fonctionne pas correctement, le client peut invoquer les règles sur les défauts de l'ouvrage (réduction du prix, réfection, voire résolution selon la gravité), sans devoir démontrer une faute de l'agence — contrairement au mandat, où seule une obligation de diligence (moyens) est due.",
-    estimated: true,
-  },
-  {
-    id: "pc-it-2",
-    themeId: "contrats-informatique",
-    type: "examen",
-    title: "Qualifier un contrat SaaS",
-    scenario:
-      "Une PME s'abonne à un service cloud de gestion de projet : elle paie un abonnement mensuel, accède au logiciel via navigateur, et le prestataire assure l'hébergement, les mises à jour et le support.",
-    question:
-      "Identifie les éléments contractuels combinés dans ce contrat SaaS et explique brièvement le rôle de chacun.",
-    correction:
-      "On retrouve typiquement : un élément de bail/licence d'usage (mise à disposition temporaire du logiciel contre paiement périodique, sans transfert de propriété du code), un élément de mandat (hébergement, maintenance, support — obligation de diligence du prestataire), et potentiellement des clauses spécifiques de type SLA (niveau de service garanti, disponibilité) ainsi que des clauses sur le traitement des données (localisation, sous-traitance, conformité LPD) qui viennent s'ajouter à cette base contractuelle mixte.",
     estimated: true,
   },
 ];

@@ -9,7 +9,7 @@
 export type ThemeColor = "indigo" | "coral" | "mint" | "saffron";
 
 export interface Theme {
-  /** identifiant court, utilisé dans les URLs (ex: "sources-du-droit") */
+  /** identifiant court, utilisé dans les URLs (ex: "bases-du-droit") */
   id: string;
   /** numéro d'ordre d'affichage, style "article" (purement esthétique) */
   order: number;

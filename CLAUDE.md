@@ -79,7 +79,7 @@ une mise à jour de contenu classique — tout est piloté par les données de
 src/
   models/types.ts        → Modèle : types TS de toutes les données
   content/                → Modèle : les données elles-mêmes
-    themes.ts             →   liste des 7 thèmes
+    themes.ts             →   liste des thèmes
     theory.ts              →   contenu théorique par thème
     practice.ts            →   cas pratiques par thème
     quiz/<theme-id>.ts     →   questions de quiz, un fichier par thème
