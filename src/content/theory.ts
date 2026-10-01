@@ -129,6 +129,16 @@ export const theory: TheoryBlock[] = [
         content:
           "Art. = article ; al. = alinéa ; ATF = Arrêt du Tribunal fédéral ; CC = Code civil ; CO = Code des obligations ; Cst (féd.) = Constitution fédérale ; TF = Tribunal fédéral ; TC = Tribunal cantonal. Liens : www.admin.ch (administration fédérale), www.bger.ch (jurisprudence du TF), www.be.ch, www.jura.ch, www.ne.ch (cantons de Berne, Jura, Neuchâtel).",
       },
+      {
+        heading: "Voies de recours : la pyramide judiciaire",
+        content:
+          "Schéma du cours : autorités cantonales de première instance → (recours) → autorités cantonales de deuxième instance → (recours) → TAF / TPF → Tribunal fédéral. Juridiction civile (CC, CO) : tribunal civil → tribunal cantonal / Cour suprême → TF ; litiges de brevets : Tribunal fédéral des brevets → TF. Juridiction pénale (CP) : tribunal pénal cantonal (tribunal des mineurs, tribunal pénal économique) → tribunal cantonal / Cour suprême → TF ; infractions contre la Confédération : TPF → TF. Juridiction administrative : instance de recours administrative interne → tribunal administratif cantonal → TF ; décisions fédérales : TAF → TF.",
+      },
+      {
+        heading: "Résultats du Wooclap : ce qui a posé problème",
+        content:
+          "Questions les moins bien réussies, à revoir : les sources secondaires du droit ; les grandes divisions du droit privé (droit civil, droit des obligations, droit commercial, droit de la PI — pas le droit pénal ni administratif) ; le droit formel (organise la procédure judiciaire) ; l'assurance-maladie de base (droit public) vs l'assurance complémentaire (droit privé) ; le droit du travail (les deux selon le contexte) ; l'enseignant qui renvoie un élève (droit public) ; le tribunal de première instance pour un délit routier mineur (tribunal de police).",
+      },
     ],
     keyPoints: [
       "Droit objectif = les règles ; droit subjectif = mes droits (droits, pouvoirs, libertés, obligations).",
