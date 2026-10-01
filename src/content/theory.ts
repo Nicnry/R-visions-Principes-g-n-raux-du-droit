@@ -84,14 +84,176 @@ export const theory: TheoryBlock[] = [
           "L'art. 1 CC pose le principe de la primauté du droit écrit : la loi régit toutes les matières auxquelles se rapportent la lettre ou l'esprit de l'une de ses dispositions ; à défaut d'une disposition légale applicable, le juge prononce selon le droit coutumier et, à défaut d'une coutume, selon les règles qu'il établirait s'il avait à faire acte de législateur ; il s'inspire des solutions consacrées par la doctrine et la jurisprudence. Difficulté : le texte de la loi est général alors que les situations sont particulières, et les dispositions légales ne sont pas toujours claires (notions non définies comme « justes motifs », notions évolutives comme la bonne foi, formulations incomplètes, lacunes ou contradictions).",
         articleRef: "Art. 1 CC",
       },
+      {
+        heading: "Loi au sens formel et au sens matériel",
+        content:
+          "Au quotidien, on emploie « loi » au sens large (matériel) pour toute règle de droit émanant d'une autorité ayant des compétences législatives ou réglementaires (ex. LAVS, ordonnance OLAA). Juridiquement, la « loi » au sens strict (formel) désigne uniquement les règles adoptées par le Parlement dans le cadre de la procédure législative (ex. LTVA, LAVS) ; le texte normatif porte en principe le mot « loi ». Principe de la primauté du droit écrit.",
+      },
+      {
+        heading: "Droit intercantonal",
+        content:
+          "Concordat ou convention entre deux ou plusieurs cantons (ex. Harmos). Il est intégré dans les RO et RS de chaque canton concerné.",
+      },
+      {
+        heading: "Trouver la loi : FF, RO, RS, fedlex",
+        content:
+          "Les lois fédérales sont édictées par le peuple et l'Assemblée fédérale (CN et CE) ; on les trouve sur fedlex (par le nom de la loi, des mots-clés, ou idéalement par le numéro RS). FF (Feuille fédérale) = première publication du projet de loi, mais on ne se base pas dessus. RO (Recueil officiel) = classé par ordre chronologique, rassemble tous les textes normatifs (Constitution, lois, arrêtés, ordonnances, traités internationaux, traités Confédération-cantons) ; c'est la version publiée au RO qui fait foi. RS (Recueil systématique) = classé par domaine/matière en neuf thématiques, rassemble tous les actes en vigueur à la date de la dernière mise à jour (RO + modifications) ; on se base sur lui pour consulter les lois. Depuis le 1er janvier 2026, c'est la version électronique (et non plus imprimée) du RO et de la FF qui fait foi. Chaque canton a son RO et son RS (ex. RSJU, RSN). Google est parfois pratique mais il faut s'assurer d'avoir la bonne version.",
+      },
+      {
+        heading: "Structure d'une loi fédérale et d'un arrêt",
+        content:
+          "Une loi fédérale comprend : l'intitulé, le préambule, le corps du texte et les dispositions finales (ex. la LTVA, divisée en titres, avec des dispositions pénales, finales et transitoires). Un arrêt (jurisprudence) comprend : le préambule, l'état de fait, le droit et le dispositif (= la décision).",
+      },
+      {
+        heading: "Où chercher chaque source (exercice en classe)",
+        content:
+          "Loi : édictée par le peuple et l'Assemblée fédérale ; fedlex ; recherche par nom de la loi ou mots-clés (idéalement RS). Jurisprudence : rendue par l'ensemble des tribunaux suisses ; bger.ch et sites cantonaux (portail du canton). Doctrine : écrite par les juristes, professeurs d'université, juges, milieux académiques ; bibliothèques, revues, articles en ligne, moteurs de recherche, sites spécialisés (Schulthess, Legalis). Coutume : difficile à trouver, spécificités = droit non écrit, usage durable, reconnu comme obligatoire.",
+      },
+      {
+        heading: "Rôle du juge : le syllogisme judiciaire",
+        content:
+          "Le juge tranche les litiges en appliquant une règle de droit (générale et abstraite) à une situation concrète (les faits) qui en remplit les conditions, et en déduit les conclusions (la décision) : c'est le syllogisme judiciaire. Une décision se structure en faits – droit – dispositif. Les tribunaux sont compétents pour trancher les litiges de manière définitive ; une fois le jugement entré en force, il ne peut plus être renversé (sauf circonstances exceptionnelles) et doit être considéré comme vrai. L'interprétation de la loi est un exercice pratiqué par différentes personnes : juges, autorités, avocats, particuliers.",
+      },
+      {
+        heading: "Les tribunaux fédéraux et le canton de Neuchâtel",
+        content:
+          "Tribunal fédéral (TF) : instance judiciaire suprême, garantit l'application uniforme du droit fédéral et le respect des droits fondamentaux. Tribunal pénal fédéral (TPF, Bellinzone) : juge en 1ère instance notamment les infractions visant les intérêts de la Confédération, le crime organisé. Tribunal administratif fédéral (TAF, St-Gall) : statue sur les recours contre les décisions de l'administration fédérale et de certains gouvernements cantonaux. Tribunal fédéral des brevets (St-Gall) : 1ère instance, litiges civils en matière de brevets et de contrefaçon. Exemple neuchâtelois — tribunaux régionaux (1ère instance) : Tribunal régional des Montagnes et du Val-de-Ruz (10 juges) et Tribunal régional du Littoral et du Val-de-Travers (15 juges), composés de la chambre de conciliation, du tribunal civil, de l'APEA, du tribunal pénal des mineurs, du tribunal de police, du tribunal criminel et du tribunal des mesures de contrainte. Tribunal cantonal (2e instance, recours) : Cour civile, Cour des mesures de protection de l'enfant et de l'adulte, autorité de recours en matière pénale, Cour pénale, Cour de droit public, Tribunal arbitral.",
+      },
+      {
+        heading: "Classer les matières : droit privé ou droit public (exercice en classe)",
+        content:
+          "Droit privé : droit du travail (aussi des aspects de droit public, cf. Wooclap : « les deux selon le contexte »), droit bancaire, droit des obligations, droit des contrats, droit des sociétés. Droit public : droit des assurances sociales, poursuite pour dettes et faillites, droit fiscal, droit administratif, droit pénal, droit constitutionnel, droit pénal des mineurs.",
+      },
+      {
+        heading: "Abréviations utiles et liens du cours",
+        content:
+          "Art. = article ; al. = alinéa ; ATF = Arrêt du Tribunal fédéral ; CC = Code civil ; CO = Code des obligations ; Cst (féd.) = Constitution fédérale ; TF = Tribunal fédéral ; TC = Tribunal cantonal. Liens : www.admin.ch (administration fédérale), www.bger.ch (jurisprudence du TF), www.be.ch, www.jura.ch, www.ne.ch (cantons de Berne, Jura, Neuchâtel).",
+      },
     ],
     keyPoints: [
       "Droit objectif = les règles ; droit subjectif = mes droits (droits, pouvoirs, libertés, obligations).",
+      "FF = première publication (on ne s'y base pas) ; RO = chronologique, fait foi (version électronique dès 2026) ; RS = par matière, version à jour.",
+      "Structure d'un arrêt : préambule, état de fait, droit, dispositif ; syllogisme judiciaire : règle + faits → décision.",
       "Les 4 sources du droit (art. 1 CC) : la loi (source primaire), puis la coutume, la jurisprudence et la doctrine (sources secondaires).",
       "Droit privé = rapports horizontaux entre particuliers ; droit public = rapports verticaux avec l'État, règles souvent impératives.",
       "Hiérarchie des normes : droit international > Constitution fédérale > loi > ordonnances > autres actes.",
       "Organisation judiciaire à 3 échelons : cantonal (1ère et 2e instance) → fédéral (TF et tribunaux spéciaux) → international (CEDH).",
       "Le Tribunal fédéral garantit une application uniforme du droit fédéral ; il ne légifère pas.",
+    ],
+  },
+  {
+    themeId: "droit-constitutionnel",
+    estimated: false,
+    intro:
+      "Chapitre 2 du cours : l'État et la Constitution, le droit constitutionnel et ses piliers (fédéralisme, démocratie, droits fondamentaux), l'organisation des pouvoirs, puis le catalogue des droits fondamentaux, leurs restrictions (art. 36 Cst.) et deux exemples détaillés : la liberté personnelle et les libertés de communication.",
+    sections: [
+      {
+        heading: "La notion d'État",
+        content:
+          "L'État a trois éléments constitutifs : la population, le territoire et la souveraineté (autorité détentrice de la force publique étatique). On oppose l'État unitaire à l'État fédéral. L'État moderne suisse est défini aux art. 1 à 5 Cst.",
+        articleRef: "Art. 1-5 Cst.",
+      },
+      {
+        heading: "La Constitution : définition et rôle",
+        content:
+          "La Constitution (au sens formel) est la loi fondamentale de la Suisse, édictée par le pouvoir constituant ; c'est une loi au sens formel qui se distingue d'une loi ordinaire par son objet, sa portée et sa procédure de confection. Son rôle : (1) loi fondamentale — elle contient les règles cardinales de l'État et les droits fondamentaux ; (2) limitation du pouvoir — par ses règles d'organisation de l'État, notamment la séparation des pouvoirs ; (3) expression de la volonté commune — la Cst. est votée par le peuple.",
+      },
+      {
+        heading: "Le droit constitutionnel et ses sources",
+        content:
+          "Le droit constitutionnel est une discipline de droit public (relation État-citoyens) qui a pour objet la Constitution. Au sens formel, c'est le texte de la Cst. ; au sens matériel, ce sont les règles juridiques fondamentales relatives à un État, à son organisation et à son fonctionnement, supérieures aux autres règles. Source au sens formel : la Constitution. Sources au sens matériel : la loi fédérale sur les droits politiques, la loi sur l'Assemblée fédérale, la loi fédérale sur l'organisation du gouvernement et de l'administration, la loi sur le TF, les constitutions cantonales et le droit international.",
+      },
+      {
+        heading: "Les trois piliers du droit constitutionnel",
+        content:
+          "(1) Le fédéralisme : structure de l'État — la Suisse (Confédération + cantons) est un État fédéral et les cantons sont des États fédérés. (2) La démocratie : représentative et directe / semi-directe. (3) Les droits fondamentaux.",
+      },
+      {
+        heading: "Structure de la Constitution fédérale de 1999",
+        content:
+          "Elle comprend six titres : Titre 1 Dispositions générales (art. 1-6) ; Titre 2 Droits fondamentaux, citoyenneté et buts sociaux (art. 7-41) ; Titre 3 Confédération, cantons et communes (art. 42-135) ; Titre 4 Peuple et cantons (art. 136-142) ; Titre 5 Autorités fédérales (art. 173-191) ; Titre 6 Révision de la Constitution et dispositions transitoires (art. 192-196).",
+      },
+      {
+        heading: "Droit fédéral et traités internationaux",
+        content:
+          "Un traité international (aussi appelé convention internationale) est un contrat entre deux ou plusieurs sujets de droit international qui créent des règles de droit. Art. 5 al. 4 Cst. : la Confédération et les cantons respectent le droit international = primauté du droit international. Art. 190 Cst. : le Tribunal fédéral et les autres autorités sont tenus d'appliquer les lois fédérales et le droit international = incorporation du droit international. Les conventions intercantonales sont des accords entre cantons (similitude au niveau des principes).",
+        articleRef: "Art. 5 al. 4 et 190 Cst.",
+      },
+      {
+        heading: "Le fédéralisme : structure de l'État",
+        content:
+          "La Confédération helvétique compte 26 cantons (dont des demi-cantons) = États fédérés. La Constitution définit les domaines de compétence : les cantons sont souverains tant que leur compétence n'est pas limitée par la Cst. Le pouvoir constituant suisse = les cantons + le peuple. Trois niveaux juridiques : fédéral (droit fédéral), cantonal (droit cantonal), communal (droit communal).",
+      },
+      {
+        heading: "La séparation des pouvoirs",
+        content:
+          "Principe : les diverses fonctions de l'État doivent être dévolues à des organes distincts et indépendants. Les trois pouvoirs : législatif (le Parlement édicte les lois), exécutif (le gouvernement exécute les lois) et judiciaire (les tribunaux veillent à la bonne application des lois).",
+      },
+      {
+        heading: "Pouvoir législatif : l'Assemblée fédérale",
+        content:
+          "Art. 143 à 173 et 179 Cst. Les députés sont élus par le peuple pour le représenter. Système bicaméral : deux Chambres se partagent le même pouvoir, traitent les mêmes affaires et siègent séparément — le Conseil national (CN, Chambre du peuple) et le Conseil des États (CE, Chambre haute, Chambre des cantons). Au niveau cantonal : Parlement / Grand conseil ; au niveau communal : Conseil général ou assemblée communale. Le cours distingue le scrutin à la proportionnelle du scrutin majoritaire.",
+        articleRef: "Art. 143-173, 179 Cst.",
+      },
+      {
+        heading: "Pouvoir exécutif : le Conseil fédéral",
+        content:
+          "Art. 174 à 187 Cst. L'autorité exécutive fonctionne de manière permanente, ses débats ne sont pas publics et elle agit de manière collégiale (principe de collégialité). Elle compte 7 conseillers fédéraux élus tous les 4 ans par l'Assemblée fédérale ; le Président est élu pour une année. Au niveau cantonal : Gouvernement / Conseil d'État ; au niveau communal : Conseil communal.",
+        articleRef: "Art. 174-187 Cst.",
+      },
+      {
+        heading: "Les droits fondamentaux : définition et caractéristiques",
+        content:
+          "Définition (Le Roy) : droits que l'État reconnaît à l'homme tant comme individu que comme membre d'une collectivité et qui constituent le cadre assurant le respect de la dignité humaine. Caractéristiques : ils sont au bénéfice des individus (bénéficiaires) ; dirigés contre l'État ou une autorité disposant de la puissance publique, qui doit les respecter (destinataire) ; composés de droits, de libertés, de garanties, voire de buts sociaux ; et peuvent être limités à des conditions strictes.",
+      },
+      {
+        heading: "Sources et catalogue des droits fondamentaux",
+        content:
+          "Sources : la Constitution fédérale (art. 7 à 36), les constitutions cantonales, la Convention européenne des droits de l'homme (CEDH) et le Pacte international relatif aux droits civils et politiques (Pacte ONU II). Catalogue (art. 7 à 34, Titre 2) : égalité, droit à la vie, droit au mariage et à la famille, liberté d'opinion, de réunion, droit à la formation de base, liberté de la science, liberté de la langue, garantie de la propriété, liberté d'établissement, liberté économique, liberté syndicale, liberté d'association.",
+        articleRef: "Art. 7-34 Cst.",
+      },
+      {
+        heading: "Restrictions des droits fondamentaux (art. 36 Cst.)",
+        content:
+          "L'État peut restreindre les droits fondamentaux à 4 conditions très restrictives : (1) base légale ; (2) intérêt public ou protection d'un droit fondamental d'autrui ; (3) proportionnalité ; (4) respect de l'essence (noyau) des droits fondamentaux, qui est inviolable. Texte : al. 1 Toute restriction doit être fondée sur une base légale ; les restrictions graves doivent être prévues par une loi ; les cas de danger sérieux, direct et imminent sont réservés. Al. 2 Toute restriction doit être justifiée par un intérêt public ou par la protection d'un droit fondamental d'autrui. Al. 3 Toute restriction doit être proportionnée au but visé. Al. 4 L'essence des droits fondamentaux est inviolable.",
+        articleRef: "Art. 36 Cst.",
+      },
+      {
+        heading: "Condition 1 : la base légale",
+        content:
+          "Toute restriction à un droit fondamental doit avoir une base légale. Il s'agit de garantir la sécurité et la prévisibilité du droit, l'égalité de traitement et la séparation des pouvoirs. L'exigence d'une base légale formelle permet le contrôle de la démocratie directe. La base légale doit avoir un degré de précision suffisant.",
+      },
+      {
+        heading: "Condition 2 : l'intérêt public",
+        content:
+          "L'intérêt public est un principe général de l'activité publique : l'État doit agir pour le bien des citoyen-ne-s ; mais c'est aussi lui qui peut justifier la restriction d'un droit fondamental. Il vise à maintenir l'ordre public, soit : la sécurité (ex. pas de publicité le long des autoroutes), la santé (ex. limitations de la vente de médicaments en ligne), la tranquillité (ex. restrictions dans le parcours d'une manifestation).",
+      },
+      {
+        heading: "Condition 3 : la proportionnalité",
+        content:
+          "La poursuite d'un intérêt public légitime ne permet pas l'utilisation de n'importe quel moyen : la proportionnalité exige que l'État limite la restriction d'un droit fondamental au strict nécessaire.",
+      },
+      {
+        heading: "Liberté personnelle (art. 10 Cst.)",
+        content:
+          "Elle protège la vie, l'intégrité physique et psychique, la vie privée et la liberté de mouvement. Vie : interdiction de la peine de mort. Intégrité physique : ex. consentement du patient pour un acte opératoire. Intégrité psychique : manifestations élémentaires de la personne humaine (mode de vie, loisirs, choix du médecin). Vie privée : sphère privée et intime, relations personnelles et familiales, honneur et réputation. Liberté de mouvement : liberté d'aller et de venir (exemple négatif : la détention préventive).",
+        articleRef: "Art. 10 Cst.",
+      },
+      {
+        heading: "Les libertés de communication (art. 16, 17, 20-23, 33 Cst.)",
+        content:
+          "Elles protègent la personne en tant qu'être social : liberté d'opinion et d'expression (entre particuliers), liberté de la presse ou des médias (communication), liberté de la science (enseignement et recherche), liberté de l'art (création et expression artistiques), liberté de réunion, liberté d'association, droit de pétition.",
+        articleRef: "Art. 16, 17, 20-23, 33 Cst.",
+      },
+    ],
+    keyPoints: [
+      "L'État = population + territoire + souveraineté ; Cst. = loi fondamentale, limite le pouvoir, votée par le peuple.",
+      "3 piliers : fédéralisme, démocratie (représentative, directe / semi-directe), droits fondamentaux.",
+      "La Cst. 1999 : 6 titres ; droits fondamentaux = Titre 2 (art. 7-41) ; autorités fédérales = Titre 5 (art. 173-191).",
+      "Art. 5 al. 4 Cst. : primauté du droit international ; art. 190 Cst. : le TF applique lois fédérales et droit international.",
+      "Séparation des pouvoirs : Assemblée fédérale (CN + CE, bicaméral), Conseil fédéral (7 membres, collégial, élus 4 ans par l'AF), tribunaux.",
+      "Droits fondamentaux : bénéficiaires = individus ; destinataire = l'État.",
+      "Art. 36 Cst. : restriction = base légale + intérêt public + proportionnalité + respect de l'essence (noyau intangible).",
     ],
   },
 ];

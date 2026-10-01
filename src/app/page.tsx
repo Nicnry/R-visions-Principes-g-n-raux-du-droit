@@ -17,7 +17,7 @@ export default function HomePage() {
         <div className="absolute -left-10 top-24 h-24 w-24 -rotate-12 rounded-[2rem] bg-coral-tint" />
         <div className="relative">
           <p className="font-mono text-xs font-bold uppercase tracking-widest text-coral-dark">
-            Unité 61-31.3 · Éthique et droit informatique
+            Unité 61-31.3 · Informatique de gestion 2026/2027
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold leading-[1.05] text-ink">
             Le dossier de révision
@@ -26,12 +26,12 @@ export default function HomePage() {
           </h1>
           <p className="mt-3 max-w-md text-[15px] text-ink-soft">
             Théorie, cas pratiques et quiz pour préparer l&apos;examen écrit de 60 minutes
-            (documentation papier autorisée) — 20% de la note du module.
+            (QCM et petits cas, toute la matière du cours évaluable, documentation papier autorisée).
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-paper-raised px-3 py-1.5 text-xs font-semibold text-ink-soft ring-1 ring-ink/10">
-              <Clock size={14} /> 18 périodes · ≈13h30
+              <Clock size={14} /> 6 semaines · 3×45 min / semaine
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-paper-raised px-3 py-1.5 text-xs font-semibold text-ink-soft ring-1 ring-ink/10">
               <FileCheck2 size={14} /> Examen écrit 60 min
@@ -73,7 +73,7 @@ export default function HomePage() {
       </section>
 
       <section className="mt-8 px-5">
-        <h2 className="mb-3 font-display text-xl font-semibold text-ink">Les 7 thèmes du module</h2>
+        <h2 className="mb-3 font-display text-xl font-semibold text-ink">Les {themes.length} chapitres vus en cours</h2>
         <div className="flex flex-col gap-3">
           {themes.map((theme) => (
             <ThemeCard key={theme.id} theme={theme} href={`/theorie/${theme.id}`} />

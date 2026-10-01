@@ -7,16 +7,15 @@ c'est le **contenu du cours** dans `src/content/`.
 
 ## Contexte important
 
-Tout le contenu théorique, les cas pratiques et les questions de quiz ont
-été **déduits** de l'intitulé officiel de l'unité 61-31.3 « Principes
-généraux du droit » (mots-clés du plan d'études : bases du droit, droits
-fondamentaux, droit de la personnalité, droit des contrats, droit du
-travail) — **pas** du contenu réel donné en cours, qui n'était pas encore
-connu au moment de la création de cette app.
+Tout le contenu actuel provient **du cours réel** (unité 61-31.3 « Principes
+généraux du droit », HE-Arc IG 2026/2027) : Chapitre 1 « Les bases du droit »,
+Chapitre 2 « Droit constitutionnel et droits fondamentaux », le Wooclap du
+chapitre 1, la présentation du cours et les notes de l'étudiant
+(`notes_s2.md`). Rien n'est inventé. Les chapitres suivants (personnalité,
+contrats, droit du travail) seront ajoutés quand ils seront donnés en cours.
 
-Chaque élément déduit porte un flag `estimated: true` dans son objet TS, et
-s'affiche avec un badge orange « Déduit » dans l'UI (`EstimatedBadge`).
-**Ne retire jamais ce badge sans avoir vérifié le contenu face au vrai cours.**
+Le flag `estimated: true` / badge « Déduit » existe toujours pour tout
+contenu non confirmé par le cours ; ne l'utilise que dans ce cas.
 
 ## Ce qu'il faut faire une fois le cours réellement commencé
 

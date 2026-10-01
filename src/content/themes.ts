@@ -15,6 +15,15 @@ export const themes: Theme[] = [
     summary: "Définitions, sources du droit, organisation de la justice et application du droit.",
     estimated: false,
   },
+  {
+    id: "droit-constitutionnel",
+    order: 2,
+    title: "Droit constitutionnel et droits fondamentaux",
+    emoji: "🏛️",
+    color: "coral",
+    summary: "État, Constitution, fédéralisme, séparation des pouvoirs, droits fondamentaux et restrictions (art. 36 Cst.).",
+    estimated: false,
+  },
 ];
 
 export function getTheme(id: string): Theme | undefined {
